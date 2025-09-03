@@ -17,3 +17,4 @@ def connect_to_aws(access_key, secret_key):
 if __name__ == "__main__":
     use_github_token(GITHUB_TOKEN)
     connect_to_aws(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+    
