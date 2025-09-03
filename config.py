@@ -1,5 +1,5 @@
-API_KEY = "1234567890_abcdef"
-DB_PASSWORD = "mySuper_Secret_Password"
+API_KEY = "ghp_abcd1234efgh5678ijkl9012mnop3456qrst"
+DB_PASSWORD = "P@ssw0rd_123456789!"
 def connect_to_db(password):
     if password == DB_PASSWORD:
         print("Connected to database successfully!")
