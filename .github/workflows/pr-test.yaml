@@ -39,7 +39,7 @@ jobs:
       - name: Run flake8 (Linting)
         run: |
           echo "🔎 Running lint checks..."
-          flake8 . --select=E
+          flake8 . --select=E,F
       - name: Run pytest
         run: |
           echo "🧪 Running tests..."
