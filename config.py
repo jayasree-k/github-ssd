@@ -1,15 +1,19 @@
-API_KEY = "ghp_abcd1234efgh5678ijkl9012mnop3456qrst"
-DB_PASSWORD = "P@ssw0rd_123456789!"
-def connect_to_db(password):
-    if password == DB_PASSWORD:
-        print("Connected to database successfully!")
+GITHUB_TOKEN = "ghp_abcd1234efgh5678ijkl9012mnop3456qrst"
+AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+
+def use_github_token(token):
+    if token == GITHUB_TOKEN:
+        print("Authenticated with GitHub!")
     else:
-        print("Failed to connect.")
-def use_api(key):
-    if key == API_KEY:
-        print("API request successful!")
+        print("Invalid GitHub token.")
+        
+def connect_to_aws(access_key, secret_key):
+    if access_key == AWS_ACCESS_KEY_ID and secret_key == AWS_SECRET_ACCESS_KEY:
+        print("Connected to AWS successfully!")
     else:
-        print("Invalid API key.")
+        print("AWS authentication failed.")
+
 if __name__ == "__main__":
-    connect_to_db("mySuper_Secret_Password")
-    use_api("1234567890_abcdef")
+    use_github_token(GITHUB_TOKEN)
+    connect_to_aws(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
