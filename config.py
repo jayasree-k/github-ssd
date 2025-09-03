@@ -1,5 +1,5 @@
-API_KEY = "1234567890abcdef"
-DB_PASSWORD = "mySuperSecretPassword"
+API_KEY = "1234567890_abcdef"
+DB_PASSWORD = "mySuper_Secret_Password"
 def connect_to_db(password):
     if password == DB_PASSWORD:
         print("Connected to database successfully!")
@@ -11,5 +11,5 @@ def use_api(key):
     else:
         print("Invalid API key.")
 if __name__ == "__main__":
-    connect_to_db("mySuperSecretPassword")
-    use_api("1234567890abcdef")
+    connect_to_db("mySuper_Secret_Password")
+    use_api("1234567890_abcdef")
