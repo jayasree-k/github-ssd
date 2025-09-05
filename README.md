@@ -1,3 +1,2 @@
 # github-ssd
-test1
 
